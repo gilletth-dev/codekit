@@ -1,0 +1,24 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 150%;
+    font-size: 18px;
+
+    /*to DELETE*/
+    height: 3000px;
+}
+
+.backToTop{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    display: none;
+}
+
+.backToTop--show{
+    display: inline;
+}
