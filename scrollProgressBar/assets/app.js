@@ -18,4 +18,5 @@ function updateScrollProgress(){
     console.log(readPercentage);
 
     progressBar.style.setProperty("--scrollBar-width", readPercentage+"%");
+    
 }
