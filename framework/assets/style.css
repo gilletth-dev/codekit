@@ -13,19 +13,3 @@ body{
     /*to DELETE*/
     height: 3000px;
 }
-
-.scrollBar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 15px;
-    background-color: darkmagenta;
-}
-
-.scrollBar__progress{
-    height: 100%;
-    width: var(--scrollBar-width, 0%);
-    background-color: coral;
-    
-}

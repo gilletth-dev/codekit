@@ -1,0 +1,46 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 150%;
+    font-size: 18px;
+    
+    padding: 5%;
+    
+    /*to DELETE*/
+    height: 3000px;
+}
+
+@media (max-width: 600px) {
+
+    .menu__toggle{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    .menu__liste{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        z-index: 10;
+
+        background-color: darkgoldenrod;
+
+        /* cacher */
+        display: none;
+    }
+
+    .menu__liste .menu--open{
+        display: block;
+    }
+    
+}
