@@ -8,6 +8,8 @@ body{
     line-height: 150%;
     font-size: 18px;
 
+    padding: 5%;
+
     /*to DELETE*/
     height: 3000px;
 }
@@ -17,8 +19,19 @@ body{
     right: 5%;
     bottom: 5%;
     display: none;
+    color: white;
+
+    background-color: gray;
+
+    /* cacher le texte
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden; */
+
+    border-radius: 12px;
+    padding: 1%;
 }
 
 .backToTop--show{
-    display: inline;
+    display: inline-block;
 }
