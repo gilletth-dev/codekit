@@ -2,14 +2,20 @@
 
 const menuToggle = document.querySelector(".menu__toggle");
 const menu = document.querySelector(".menu");
+const menuLinks = document.querySelectorAll("a");
 
 if(menuToggle){
+    //click btn
     menuToggle.addEventListener("click", menuOpen);
-    console.log("click");
+
+    //click liens
+    for (let i=0; i < menuLinks.length; i++){
+    menuLinks[i].addEventListener("click", menuOpen)
 }
+}
+
+//toggle du menu
 function menuOpen(){
     menu.classList.toggle("menu--open");
     console.log("menu open");
 }
-
-//quand on clique sur un des liens le menu se refmerme

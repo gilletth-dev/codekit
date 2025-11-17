@@ -39,7 +39,7 @@ body{
         display: none;
     }
 
-    .menu__liste .menu--open{
+    .menu--open .menu__liste {
         display: block;
     }
     
