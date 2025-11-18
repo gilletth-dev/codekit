@@ -1,5 +1,6 @@
 "use strict"; 
 
+const body = document.querySelector("body");
 const menuToggle = document.querySelector(".menu__toggle");
 const menu = document.querySelector(".menu");
 const menuLinks = document.querySelectorAll("a");
