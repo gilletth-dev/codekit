@@ -11,9 +11,20 @@ body{
     padding: 5%;
 
 }
+.tab__wrapper{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
 
 .tab__content{
-    display: none;
+    /* display: none; */
+    background: orange;
+    padding: 5%;
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
 
 .tab__links{
@@ -37,8 +48,3 @@ body{
     background: orange;
 }
 
-.tab__content--active{
-    display: block;
-    background-color: orange;
-    padding: 5px;
-}
