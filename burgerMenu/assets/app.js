@@ -4,6 +4,8 @@ const menuToggle = document.querySelector(".menu__toggle");
 const menu = document.querySelector(".menu");
 const menuLinks = document.querySelectorAll("a");
 
+menu.classList.remove("menu--open");
+
 if(menuToggle){
     //click btn
     menuToggle.addEventListener("click", menuOpen);
@@ -17,5 +19,6 @@ if(menuToggle){
 //toggle du menu
 function menuOpen(){
     menu.classList.toggle("menu--open");
+    document.body.classList.toggle("no-scroll");
     console.log("menu open");
 }
