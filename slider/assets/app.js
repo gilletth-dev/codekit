@@ -33,4 +33,10 @@ function prevSlide(){
     }
 }
 
-
+document.addEventListener("keydown", function(event){
+    if(event.code == "ArrowLeft"){
+        prevSlide();
+    } else if (event.code == "ArrowRight"){
+        nextSlide();
+    }
+});
