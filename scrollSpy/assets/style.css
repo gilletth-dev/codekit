@@ -9,6 +9,7 @@ body{
 h1{
     justify-content: left;
     align-items: left;
+    height: 600px;
 }
 .container{
    width: 80%;
