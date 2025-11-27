@@ -8,18 +8,21 @@ body{
     line-height: 150%;
     font-size: 18px;
     
-    padding: 5%;
+    padding: 0;
     
     /*to DELETE*/
     height: 3000px;
 }
 
+h1{
+    padding: 5%;
+}
 .dropdown{
     position: relative;
     display: inline-block;
 }
 .dropdown__btn{
-    /* emepeche le retour à la ligne */
+    display: flex;
     white-space: nowrap; 
     background-color: #008000;
     color: white;
@@ -34,7 +37,9 @@ body{
 }
 
 .dropdown__content{    
-    min-width: 160px;
+    /* width: 100%; */
+    min-height: 100vh;
+    min-width: 100vw;
     display: none;
     margin: 0;
     padding: 0;
