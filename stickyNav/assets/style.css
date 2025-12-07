@@ -28,6 +28,10 @@ h1{
     background-color: gray;
 
     transition: .3s ease-in-out;
+
+    &:hover{
+        background-color: rgb(166, 166, 166);
+    }
 }
 .menu__list{
     display: flex;
