@@ -19,7 +19,7 @@ body.no-scroll{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
     .menu__toggle{
         position: fixed;
@@ -27,6 +27,15 @@ body.no-scroll{
         right: 20px;
         cursor: pointer;
         z-index: 20;
+        background-color: gray;
+
+        border-radius: 12px;
+        padding: 1%;
+        transition: ease-in-out 0.5s;
+
+        &:hover{
+            background: rgb(196, 193, 193);
+        }
     }
 
     .menu__liste{
