@@ -65,14 +65,14 @@ body{
 	> :first-child {
 		margin-right: -5%;
 		opacity: 0;
-		transform: translateX(10vw);
-		transition: opacity 0.5s, transform 0.5s;
+		transform: translateX(-10%);
+		transition: opacity 0.5s, transform 0.3s;
 	}
 
 	> :last-child {
 		margin-left: -5%;
 		opacity: 0;
-		transform: translateX(-10vw);
+		transform: translateY(-100%);
 		transition: opacity 0.5s, transform 0.5s;
 	}
 }
@@ -81,12 +81,12 @@ body{
 
 	> :first-child {
 		opacity: 1;
-		transform: translateX(0);
+		transform: translateY(0);
 	}
 
 	> :last-child {
 		opacity: 1;
-		transform: translateX(0);
+		transform: translateY(0);
 	}
 }
 

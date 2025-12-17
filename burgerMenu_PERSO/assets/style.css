@@ -1,0 +1,62 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 150%;
+    font-size: 18px;
+    
+    padding: 5%;
+    
+    /*to DELETE*/
+    height: 3000px;
+}
+
+body.no-scroll{
+    overflow: hidden;
+}
+
+
+@media (max-width: 1000px) {
+
+    .menu__toggle{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 20;
+        background-color: gray;
+
+        border-radius: 12px;
+        padding: 1%;
+        transition: ease-in-out 0.5s;
+
+        &:hover{
+            background: rgb(196, 193, 193);
+        }
+    }
+
+    .menu__liste{
+        position: fixed;
+        top: 1%;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        margin: 0;
+        z-index: 10;
+        padding-top: 2%;
+
+        border-radius: 12px;
+        background-color: darkgoldenrod;
+
+        transform: translateX(100%) translateY(-100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .menu--open .menu__liste {
+        transform: translateX(-1%);
+    }
+    
+}

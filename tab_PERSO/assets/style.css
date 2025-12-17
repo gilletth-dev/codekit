@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 150%;
+    font-size: 18px;
+    padding: 5%;
+}
+
+.tab__wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.tab__content {
+    background: orange;
+    padding: 5%;
+    width: 100%;
+    box-sizing: border-box;
+    
+    display: none; 
+    opacity: 0;
+}
+
+.tab__content--active {
+    display: block;
+    animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);   
+    }
+}
+.tab__links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tab__el {
+    margin-right: 6%;
+    background: red;
+    padding: 10px 2%;
+}
+
+.tab__el--active {
+    background: orange;
+}
+
+.tab__el:hover {
+    background: orange;
+}
+
+.tab__el a {
+    text-decoration: none;
+    color: black;
+}
